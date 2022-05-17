@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
@@ -11,14 +12,16 @@ import { HeaderComponent } from './header/header.component';
     BreadcrumbsComponent,
     SidebarComponent,
     HeaderComponent,
+
   ],
-  imports: [
-    CommonModule
-  ]
-  ,exports:[
+  exports: [
     BreadcrumbsComponent,
     SidebarComponent,
     HeaderComponent,
+  ],
+  imports: [
+    CommonModule,
+    RouterModule
   ]
 })
 export class SharedModule { }

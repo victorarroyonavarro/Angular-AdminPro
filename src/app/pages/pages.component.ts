@@ -1,4 +1,7 @@
+import { SettingsService } from './../services/settings.service';
 import { Component, OnInit } from '@angular/core';
+
+declare function  LoadJsInicial();
 
 @Component({
   selector: 'app-pages',
@@ -8,9 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private settingServices:SettingsService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    LoadJsInicial();
+
   }
 
 }
