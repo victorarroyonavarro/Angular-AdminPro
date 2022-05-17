@@ -18,7 +18,7 @@
                     </ul>
                 </li>
                 <li class="nav-devider"></li>
-                <li class="nav-small-cap">PERSONAL</li>
+                <li class="nav-small-cap">MENU</li>
                 <li *ngFor="let item of menuItems">
                    <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
                     <i class="mdi mdi-gauge"></i>
@@ -29,7 +29,11 @@
                     <ul aria-expanded="false" class="collapse">
 
                         <li *ngFor="let submenu of item.submenu">
-                          <a [routerLink]="submenu.url">{{submenu.titulo}}</a>
+                          <a routerLinkActive="active"
+                           [routerLinkActiveOptions]="{exact:true}"
+                           [routerLink]="submenu.url">{{submenu.titulo}}
+
+                          </a>
                         </li>
 
                     </ul>
