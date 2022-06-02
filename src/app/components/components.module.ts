@@ -9,12 +9,10 @@ import { DonaComponent } from './dona/dona.component';
 
 
 
-
 @NgModule({
   declarations: [
     IncrementadorComponent,
-    DonaComponent,
-
+    DonaComponent
   ],
   exports: [
     IncrementadorComponent,

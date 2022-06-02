@@ -1,7 +1,8 @@
-import { SettingsService } from './../services/settings.service';
 import { Component, OnInit } from '@angular/core';
 
-declare function  LoadJsInicial();
+import { SettingsService } from '../services/settings.service';
+
+declare function customInitFunctions();
 
 @Component({
   selector: 'app-pages',
@@ -11,11 +12,10 @@ declare function  LoadJsInicial();
 })
 export class PagesComponent implements OnInit {
 
-  constructor(private settingServices:SettingsService) { }
+  constructor( private settingsService: SettingsService ) { }
 
-  ngOnInit() {
-    LoadJsInicial();
-
+  ngOnInit(): void {
+    customInitFunctions();
   }
 
 }

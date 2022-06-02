@@ -1,6 +1,4 @@
 
-
-
 .fast{
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
@@ -8,6 +6,6 @@
     animation-fill-mode:both
 }
 
-#themecolors .selector{
-  cursor: pointer;
+#themecolors .selector, .cursor {
+    cursor: pointer;
 }

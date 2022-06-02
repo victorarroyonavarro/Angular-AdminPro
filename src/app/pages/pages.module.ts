@@ -1,10 +1,7 @@
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms'
-
-
 
 // Modulos
 import { SharedModule } from '../shared/shared.module';
@@ -21,7 +18,6 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
-
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -31,7 +27,6 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     AccountSettingsComponent,
     PromesasComponent,
     RxjsComponent,
-
   ],
   exports: [
     DashboardComponent,
@@ -40,13 +35,12 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     PagesComponent,
     AccountSettingsComponent
   ],
-  imports: [
+  imports: [ 
     CommonModule,
     FormsModule,
     SharedModule,
     RouterModule,
     ComponentsModule
-
   ]
 })
 export class PagesModule { }
