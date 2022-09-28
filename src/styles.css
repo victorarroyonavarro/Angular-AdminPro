@@ -1,13 +1,68 @@
-
-
-
-.fast{
+.fast {
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
 }
 
-#themecolors .selector{
-  cursor: pointer;
+#themecolors .selector,
+.cursor,
+.paginator {
+    cursor: pointer;
 }
+
+.img-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.w100 {
+    width: 100px;
+}
+
+
+.avatar {
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 100%;
+}
+
+.avatar:hover {
+    opacity: 0.4
+}
+
+.cursor:hover {
+    opacity: 0.4
+}
+
+
+.cabecera {
+    cursor: pointer;
+
+}
+
+.ocultarModal {
+    display: none;
+}
+
+
+.fondo-imagen-modal {
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+
+}
+
+.errorTable {
+
+    font-size: 12px;
+    color: red;
+    min-height: 22px;
+}
+
+

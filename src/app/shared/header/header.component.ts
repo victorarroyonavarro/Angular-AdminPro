@@ -1,16 +1,16 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styles: [
-  ]
+  styles: [],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+  constructor() {
 
-  constructor() { }
-
-  ngOnInit(): void {
   }
+
 
 }
